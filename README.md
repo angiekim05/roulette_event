@@ -6,18 +6,21 @@
 
    
 ## Work Flow
-- 메인 이벤트 페이지   
-![메인페이지](./static/images/1.png)
-- 이벤트 설명 페이지   
-![설명페이지](./static/images/2.png)
+- 메인 이벤트 페이지    
+<img src="./static/images/1.png" width="200" height="315"/>
+- 이벤트 설명 페이지    
+<img src="./static/images/2.png" width="200" height="315"/>
 - 미션 페이지
     - 각 미션이 끝나면 미션에 대한 결과가 popup으로 뜸
-    - 미션 성공시 코인을 얻고 룰렛으로 이동, 실패시 미션 재도전
-![미션페이지](./static/images/3.png)
+    - 미션 성공시 코인을 얻고 룰렛으로 이동, 실패시 미션 재도전    
+<img src="./static/images/3.png" width="200" height="315"/>
+<img src="./static/images/5.png" width="200" height="315"/>
 - 룰렛 페이지
     - 당첨 혹은 꽝에 대한 결과 popup 포함
-    - 꽝일 경우 미션 재도전, 상품일 경우 다음 미션으로 이동
-![룰렛페이지](./static/images/4.png)
+    - 꽝일 경우 미션 재도전, 상품일 경우 다음 미션으로 이동    
+<img src="./static/images/4.png" width="200" height="315"/>
+<img src="./static/images/6.png" width="200" height="315"/>
+<img src="./static/images/7.png" width="200" height="315"/>
 
    
 #### 도움
