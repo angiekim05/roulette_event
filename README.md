@@ -1,4 +1,4 @@
-# roulette_event
+# Roulette Event
 - 친구 생일 기념 이벤트에 사용하기 위해 간단히 만든 미션 룰렛 이벤트 웹 페이지
 - 모바일 사용에 적합한 사이즈로 개발
 - 일련의 흐름을 고정해두고 이벤트 진행 (조작해놓음)
@@ -22,7 +22,6 @@
 <img src="./static/images/6.png" width="200" height="315"/>
 <img src="./static/images/7.png" width="200" height="315"/>
 
-   
 #### 도움
 - 디자인 도움: 한나
 
