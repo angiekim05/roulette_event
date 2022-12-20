@@ -1,0 +1,22 @@
+{% extends 'home.html'%}
+<!-- Coupon number -->
+{% block numb %}<span id = "ticket">1</span>{% endblock %}
+{% block contents %}
+<!-- popup -->
+<div id = "popup-bg" class = "popup-bg">
+    <div id = "popup" class = "popup">
+        <div>
+            <img id = "popup-img" class="popup-img" src="{{ url_for('static', filename = 'img/popup/win_.png') }}"> 
+            <br><br>
+            <img id = "popup-img" class="popup-img" src="{{ url_for('static', filename = 'img/popup/win_m.png') }}"> 
+            <h4>
+            장소: <br><br>
+            비밀번호: 
+            </h4>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<script type = "text/javascript" src="{{ url_for('static', filename = 'js/luck.js') }}"></script>
+{% endblock %}

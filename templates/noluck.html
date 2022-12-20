@@ -1,0 +1,17 @@
+{% extends 'home.html'%}
+{% block numb %}<span id = "ticket">1</span>{% endblock %}
+{% block contents %}
+<!-- popup -->
+<div id = "popup-bg" class = "popup-bg">
+    <div id = "popup" class = "popup">
+        <div>
+            <img id = "popup-img" class="popup-img" src="{{ url_for('static', filename = 'img/popup/noluck.png') }}">
+        </div>
+        <a href = "{{url_for('mission1_')}}"><img class="retry-btn" src="{{ url_for('static', filename = 'img/btn/retry_k.png') }}"></a>
+        <a href = "{{url_for('mission1_')}}"><img class="retry-btn" src="{{ url_for('static', filename = 'img/btn/retry.png') }}"></a>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<script type = "text/javascript" src="{{ url_for('static', filename = 'js/noLuck.js') }}"></script>
+{% endblock %}

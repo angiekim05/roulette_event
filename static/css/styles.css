@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'ONEMobilePOP';
+    src: url('../font/ONEMobilePOP.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.content-font {
+	font-family: 'ONEMobilePOP';
+    text-align: center;
+}
+.main-container {
+  position: relative;
+  background: #fff;  
+  max-width: 500px;
+  margin: 0 auto;
+}
+.main-header { 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main-bg {
+    position: relative;
+    width: 100%;    
+}
+.main-title {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 56%;
+    left: 50%;   
+}
+.up-img {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    top: 0%;
+    left: 50%; 
+    
+}
+.bottom-img {
+    position: absolute;
+    width: 50%;
+    transform: translate(0, 0%);
+    left: 5%;
+    top: 0%;
+}
+.bottom-btn {
+    position: absolute;
+    width: 20%;
+    transform: translate(-100%, 0%);
+    left: 90%;
+    top: 0%;
+}
+.notice-title {
+    position: absolute;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+}
+.notice-img {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    top: 0%;
+}
+.notice-btn {
+    position: absolute;
+    width: 20%;
+    transform: translate(-50%, -250%);
+    left: 50%;
+    top: 0%;
+}
+.container {
+  background: #8bb4da; 
+  max-width: 500px;
+  margin: 0 auto;   
+}
+.header { 
+  position: relative;
+  width: 100%;
+}
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 90px;    
+}
+.title{
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+}
+.line {
+    background-color: #274e7a;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 20px
+}
+
+
+/* 미션 */
+.mission {
+    position: relative;
+    width: 90%;
+}
+.upload-btn {
+    position: relative;
+    width: 40%;
+}
+.return-btn {
+    z-index: 2;
+    position: relative;
+    width: 23%;
+}
+.retry-btn {
+    position: relative;
+    width: 38%;
+}
+.next-mission-btn {
+    position: relative;
+    width: 50%;
+}
+#file {
+  display: none;
+}
+#submit {
+  display: none;
+}
+#returnimg {
+  display: none;
+}
+
+
+
+/* 모달 */
+.popup-bg {
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background:#8bb4da;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+.popup {
+    position: absolute;
+    width: 350px;
+    background: #fff;
+    opacity:1;
+    padding: 15px;
+    overflow: hidden;   
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; 
+}
+.popup-img {
+    position: relative;
+    width: 100%;
+}
+.go-to-roulette-btn {
+    position: relative;
+    width: 40%;
+}
+
+
+/* 룰렛 */
+.rouletter {
+  position: relative;
+  width: 100%;
+  height: 370px;
+}
+.rouletter-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 300px;
+  overflow: hidden;
+}
+.rouletter-wacu {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f2
+    url("../img/roulette.png")
+    no-repeat;
+  background-size: 100%;
+  transform-origin: center;
+  transition-timing-function: ease-in-out;
+  transition: 2s;
+}
+.rouletter-arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 70px;
+  background: #f5f5f2
+    url("../img/pin.png")
+    no-repeat;
+  background-color: transparent;
+  background-size: 100%;
+}
+.rouletter-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background: #6ba0d1;
+  color : #fff;
+  font-size: 20px;
+  border: 2px solid #000000;
+}
+
+.hidden-input {
+  display: none;
+}
+
+
+/* 로딩 */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

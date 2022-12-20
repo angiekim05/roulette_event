@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>K&L 행운의 룰렛</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="container content-font">
+    <div class = "header">
+        <div>
+            <img class="header-img" src="{{ url_for('static', filename = 'img/head.png') }}">
+        </div>
+        <div>
+            <img class="title" src="{{ url_for('static', filename = 'img/title.png') }}">
+        </div>
+    </div>
+    <br><br><br>
+    <div>미션성공시 룰렛 코인 1개가 주어집니다</div>
+    <div class="line">
+        남은 룰렛 코인 :  {% block numb %}0{% endblock %} 개
+    </div>
+    <br>
+    <div id="app"></div>
+    {% block contents %}{% endblock %}
+</body>
+{% block content %}
+<script type = "text/javascript" src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+{% endblock %}
+</html>

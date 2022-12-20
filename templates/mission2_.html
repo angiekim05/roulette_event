@@ -1,0 +1,20 @@
+{% extends 'mission1.html'%}
+{% block title %}
+<img class="title" src="{{ url_for('static', filename = 'img/m2.png') }}">
+{% endblock %}
+
+{% block contents %}
+<img class="mission" src="{{ url_for('static', filename = 'img/m2e.png') }}">
+{% endblock %}
+
+{% block form_dest %}
+<form action = "{{url_for('mission2_roulette')}}" method = "POST" enctype = "multipart/form-data">
+{% endblock %}
+
+{% block mission_result %}
+<img id = "popup-img" class="popup-img" src="{{ url_for('static', filename = 'img/popup/success.png') }}">
+{% endblock %}
+
+{% block result_btn %}
+<div><img class="go-to-roulette-btn" src="{{ url_for('static', filename = 'img/btn/go_roulette.png') }}"></div>
+{% endblock %}

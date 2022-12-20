@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K&L 행운의 룰렛</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/loader.css') }}" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main-container content-font">
+    <div class = "header">
+        <div>
+            <img class="header-img" src="{{ url_for('static', filename = 'img/head.png') }}">
+        </div>
+        <div>
+            {% block title %}
+            <img class="title" src="{{ url_for('static', filename = 'img/m1.png') }}">
+            {% endblock %}
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class = "header">
+        <div>
+            {% block contents %}
+            <img class="mission" src="{{ url_for('static', filename = 'img/m1e.png') }}">
+            {% endblock %}
+        </div>
+        <br><br><br>
+        {% block form_dest %}
+        <form action = "{{url_for('mission1_roulette')}}" method = "POST" enctype = "multipart/form-data">
+        {% endblock %}
+            <label for="file">
+              <div id = "fileimg"><img class="upload-btn" src="{{ url_for('static', filename = 'img/btn/upload.png') }}"></div>
+            </label>
+            <!--  file upload btn  -->
+            <input id = "file" type = "file" name = "file" accept="images/*" onchange ="toggle();"/> 
+            <!--  return btn  -->
+            <div id = "returnimg"><img onclick="popup()" class="return-btn" src="{{ url_for('static', filename = 'img/btn/return.png') }}"></div>
+            <!--  loader  -->
+            <div id = "buttonload" class="buttonload"><i class="fa fa-spinner fa-spin"></i></div> 
+            
+            <!--  popup  -->
+            <div id = "popup-bg" class = "popup-bg">
+                <div id = "popup" class = "popup">
+                    <div>
+                        {% block mission_result %}
+                        <img id = "popup-img" class="popup-img" src="{{ url_for('static', filename = 'img/popup/success.png') }}">
+                        {% endblock %}
+                    </div>
+                    <br>
+                    <label for="submit">
+                      {% block result_btn %}
+                      <div><img class="go-to-roulette-btn" src="{{ url_for('static', filename = 'img/btn/go_roulette.png') }}"></div>
+                      {% endblock %}
+                    </label>
+                    <!-- go to roulette btn (submit form) -->
+                    <input id = "submit" type = "submit"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+<script type = "text/javascript" src="{{ url_for('static', filename = 'js/mission.js') }}"></script>
+</html>

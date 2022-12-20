@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>K&L 행운의 룰렛</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="main-container content-font">
+    <div class = "header">
+        <div>
+            <img class="main-bg" src="{{ url_for('static', filename = 'img/main_bg.png') }}">
+        </div>
+        <div>
+            <img class="up-img" src="{{ url_for('static', filename = 'img/family_up.png') }}">
+        </div>
+        <div>
+            <img class="main-title" src="{{ url_for('static', filename = 'img/main.png') }}">
+        </div>
+    </div>
+    <br><br><br>
+    <div class = "main-header">
+        <div>
+            <a href = "{{url_for('notice')}}"><img class="bottom-btn" src="{{ url_for('static', filename = 'img/btn/next.png') }}"></a>
+        </div>
+        <div>
+              <img class="bottom-img" src="{{ url_for('static', filename = 'img/family.png') }}" >
+        </div>
+    </div>
+</body>
+</html>
