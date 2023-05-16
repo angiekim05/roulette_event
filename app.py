@@ -49,5 +49,6 @@ def mission3():
 def mission3_roulette():
     return render_template('luck.html')
 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True)
